@@ -89,7 +89,7 @@ def main():
         model_dis = resnet.resnet50()  
         model_dis = torch.nn.DataParallel(model_dis).cuda()
         model_dis.module.fc = nn.Linear(2048, 7).cuda()
-        # checkpoint = torch.load('./checkpoint/pretrain_tcr.pth')
+        # checkpoint = torch.load('./checkpoint/teacher_RAF.pth.tar')
         # model_dis.load_state_dict(checkpoint['state_dict'])
         
     
