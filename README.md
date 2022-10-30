@@ -1,6 +1,6 @@
 # MLIFNet
 
-"[Lightweight Multi-level Information Fusion Network for Facial Expression Recognition]"
+Lightweight Multi-level Information Fusion Network for Facial Expression Recognition
 
 ## Requirements
 
