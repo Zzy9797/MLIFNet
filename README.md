@@ -30,7 +30,7 @@ Lightweight Multi-level Information Fusion Network for Facial Expression Recogni
 [Note] 0: Neutral; 1: Happiness; 2: Sadness; 3: Surprise; 4: Fear; 5: Disgust; 6: Anger
 ```
 
-- Step 2: put the teacher network [pre-trained model](https://drive.google.com/file/d/1tkWxUj8yBV0KQCvuTOuOLhOHTF0AID4D/view?usp=share_link) and MLIFNet pre-trained model to ***./checkpoint***.
+- Step 2: put the teacher network [pre-trained](https://drive.google.com/file/d/1tkWxUj8yBV0KQCvuTOuOLhOHTF0AID4D/view?usp=share_link) model and MLIFNet [pre-trained](https://drive.google.com/file/d/1VigGoHijB-uOHQxn7r9mZEVUFZiyXpVx/view?usp=share_link) model to ***./checkpoint***.
     
 - Step 3: change ***data_path*** in *main_MLIFNet.py* to your path 
 
