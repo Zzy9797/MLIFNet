@@ -81,7 +81,7 @@ def main():
         model_dis = resnet.resnet50()  
         model_dis = torch.nn.DataParallel(model_dis).cuda()
         model_dis.module.fc = nn.Linear(2048, 7).cuda()
-        # checkpoint = torch.load('./checkpoint/pretrain_tcr.pth')
+        # checkpoint = torch.load('./checkpoint/resnet50_pretrained_on_msceleb.pth.tar')
         # model_dis.load_state_dict(checkpoint['model_state_dict'])
         
         
@@ -94,19 +94,13 @@ def main():
         
     
     ## MLIFNet
-    if args.train_object=='singlemlif':
         model_cla = MLIFNet.mlifnet()
         model_cla = torch.nn.DataParallel(model_cla).cuda()
-        # checkpoint = torch.load('./checkpoint/pretrain_MLIFNet.pth')
+        # checkpoint = torch.load('./checkpoint/pretrained_model_for_MLIFNet.tar')
         # pre_trained_dict = checkpoint['state_dict']
         # model_cla.load_state_dict(pre_trained_dict)
     
-    else:
-        model_cla = MLIFNet.mlifnet()
-        model_cla = torch.nn.DataParallel(model_cla).cuda()
-        # checkpoint = torch.load('./checkpoint/pretrain_MLIFNet.pth')
-        # pre_trained_dict = checkpoint['state_dict']
-        # model_cla.load_state_dict(pre_trained_dict)
+
         
     
     # define loss function (criterion) and optimizer
